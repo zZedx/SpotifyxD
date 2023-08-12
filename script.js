@@ -111,7 +111,7 @@ let addmusic = (name) => {
     songsCOntainer.appendChild(audioElement[index]);
 
     musicTitle[index] = name;
-    musicImgSrc[index] = `/imgs/${1}.jpg`
+    musicImgSrc[index] = `imgs/${1}.jpg`
     createSong(index + 1, musicImgSrc[index], name, 'none', audioElement[index].duration)
 
     playButton[index] = document.querySelector(`.song${index + 1}`);
